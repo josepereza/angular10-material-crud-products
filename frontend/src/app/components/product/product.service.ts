@@ -5,7 +5,7 @@ import { Product } from './product.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
 
@@ -18,7 +18,7 @@ export class ProductService {
       horizontalPosition: 'right',
       verticalPosition: 'top',
       duration: 3000,
-    })
+    });
   }
 
   create(product: Product): Observable<Product> {
@@ -27,5 +27,15 @@ export class ProductService {
 
   read(): Observable<Product[]> {
     return this.http.get<Product[]>(this.BASE_URL);
+  }
+
+  readById(id: number): Observable<Product> {
+    const url = `${this.BASE_URL}/${id}`;
+    return this.http.get<Product>(url);
+  }
+
+  update(product: Product): Observable<Product> {
+    const url = `${this.BASE_URL}/${product.id}`;
+    return this.http.put<Product>(url, product);
   }
 }
