@@ -2,18 +2,13 @@
   "products": [
     {
       "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
-    },
-    {
-      "id": 2,
-      "name": "Samsung Pro",
-      "price": 8595.89
+      "name": "Caneta BIC Azul",
+      "price": "3.90"
     },
     {
       "id": 3,
       "name": "Tv Phillips",
-      "price": 1355.89
+      "price": "2000.89"
     },
     {
       "name": "Teclado Mecânico",
@@ -21,19 +16,9 @@
       "id": 4
     },
     {
-      "name": "Celular Xiaomi Redmi Note 7",
-      "price": "999.99",
+      "name": "Angular",
+      "price": "999999.99",
       "id": 5
-    },
-    {
-      "name": "Apito",
-      "price": "5",
-      "id": 6
-    },
-    {
-      "name": "TV",
-      "price": "800",
-      "id": 7
     }
   ]
 }
